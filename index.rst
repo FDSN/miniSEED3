@@ -32,6 +32,3 @@ such as location, instrument response, etc.
    software
    changes
    FDSN home <https://www.fdsn.org/>
-
-* :ref:`search`
-
