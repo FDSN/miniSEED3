@@ -1,0 +1,26 @@
+{
+    "FDSN": {
+        "Time": {
+            "Quality": 100,
+        },
+        "Event": {
+            "Begin": true,
+            "InProgress": true,
+            "Detection": [
+                {
+                    "Type": "MURDOCK",
+                    "SignalAmplitude": 80,
+                    "SignalPeriod": 0.4,
+                    "BackgroundEstimate": 18,
+                    "Wave": "DILATATION",
+                    "Units": "COUNTS",
+                    "OnsetTime": "2012-01-13T18:28:06.185000Z",
+                    "MEDSNR": [1, 3, 2, 1, 4, 0],
+                    "MEDLookback": 2,
+                    "MEDPickAlgorithm": 0,
+                    "Detector": "Z_SPWWSS"
+                }
+            ]
+        }
+    }
+}

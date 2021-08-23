@@ -1,7 +1,7 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "id": "http://www.fdsn.org/schemas/ExtraHeaders-FDSN.schema.json",
-    "description": "Extra headers in xSEED data format",
+    "description": "Extra headers in miniSEED 3 data format",
 
     "definitions": {
         "Equipment": {
