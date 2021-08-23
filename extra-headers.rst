@@ -37,6 +37,8 @@ When not present, the boolean values in the FDSN reserved headers
 should be considered to be `false` unless otherwise documented.  Such
 values do not need to be included when the value is `false`.
 
+
+
 See :ref:`example-fdsn-extra-headers` for an example of FDSN extra headers.
 
 ----------------------------------------------------------
