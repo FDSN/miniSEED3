@@ -30,7 +30,7 @@ Download `mseedconvert releases <https://github.com/iris-edu/mseedconvert/releas
 libmseed
 --------
 
-A general library (C language) for reading and writing miniSEED in
+A general library (C language) for reading and writing miniSEED.  Release versions 3.x support both
 this specification and version 2 of the format.
 
 Download `libmseed releases <https://github.com/iris-edu/libmseed/releases>`_
