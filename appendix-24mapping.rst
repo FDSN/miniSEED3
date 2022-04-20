@@ -38,21 +38,21 @@ miniSEED 2.4 Fixed Section Data Header (FSDH)
 +-----+--------------------------------+----------------------------------------+
 |3    |Reserved byte                   | [no mapping]                           |
 +-----+--------------------------------+----------------------------------------+
-|4    |Station identifier code         | Incorporated into SID, FSDH field 14   |
+|4    |Station identifier code         | Incorporated into SID, FSDH field 13   |
 +-----+--------------------------------+----------------------------------------+
-|5    |Location identifier             | Incorporated into SID, FSDH field 14   |
+|5    |Location identifier             | Incorporated into SID, FSDH field 13   |
 +-----+--------------------------------+----------------------------------------+
-|6    |Channel identifier              | Incorporated into SID, FSDH field 14   |
+|6    |Channel identifier              | Incorporated into SID, FSDH field 13   |
 +-----+--------------------------------+----------------------------------------+
-|7    |Network code                    | Incorporated into SID, FSDH field 14   |
+|7    |Network code                    | Incorporated into SID, FSDH field 13   |
 +-----+--------------------------------+----------------------------------------+
-|8    |Record start time               | FSDH field 8                           |
+|8    |Record start time               | FSDH field 4                           |
 +-----+--------------------------------+----------------------------------------+
-|9    |Number of samples               | FSDH field 8                           |
+|9    |Number of samples               | FSDH field 7                           |
 +-----+--------------------------------+----------------------------------------+
-|10   |Sample rate factor              | Incorporated into FSDH field 7         |
+|10   |Sample rate factor              | Incorporated into FSDH field 6         |
 +-----+--------------------------------+----------------------------------------+
-|11   |Sample rate multiplier          | Incorporated into FSDH field 7         |
+|11   |Sample rate multiplier          | Incorporated into FSDH field 6         |
 +-----+--------------------------------+----------------------------------------+
 |12   |Activity flags:                 |FSDH and Extra headers:                 |
 |     | | 0 = calibration signals      | | FSDH field 3, bit 0                  |
@@ -97,7 +97,7 @@ Blockette 100 (Sample Rate)
 +-----+--------------------------------+----------------------------------------+
 |Field|Description                     |This specification                      |
 +=====+================================+========================================+
-|3    |Actual sample rate              | FSDH field 7                           |
+|3    |Actual sample rate              | FSDH field 6                           |
 +-----+--------------------------------+----------------------------------------+
 |4    |Flags (undefined)               | [no mapping]                           |
 +-----+--------------------------------+----------------------------------------+
@@ -350,7 +350,7 @@ Blockette 1001 (Data Extension)
 +=====+===========================+=============================================+
 |3    |Timing quality             | EH: `FDSN.Time.Quality`                     |
 +-----+---------------------------+---------------------------------------------+
-|4    |Microsecond offset         | [included in record start time]             |
+|4    |Microsecond offset         | Incorporated into FSDH field 4              |
 +-----+---------------------------+---------------------------------------------+
 |5    |Reserved byte              | [no mapping]                                |
 +-----+---------------------------+---------------------------------------------+
