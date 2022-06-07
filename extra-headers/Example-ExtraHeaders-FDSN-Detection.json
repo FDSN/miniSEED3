@@ -9,14 +9,7 @@
           "BackgroundEstimate": 18,
           "Wave": "DILATATION",
           "OnsetTime": "2022-06-05T20:32:39.120000Z",
-          "MEDSNR": [
-            1,
-            3,
-            2,
-            1,
-            4,
-            0
-          ],
+          "MEDSNR": [ 1, 3, 2, 1, 4, 0 ],
           "MEDLookback": 2,
           "MEDPickAlgorithm": 0,
           "Detector": "Z_SPWWSS"

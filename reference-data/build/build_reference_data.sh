@@ -10,7 +10,7 @@
 
 # Event detection, extra headers only
 echo Building reference-detectiononly.mseed3
-./generate_miniseed3.py -s 0 -Y 2004 -D 210 -H 20 -M 28 -S 9 -N 0 -e ExtraHeader-FDSN-Detection.json -V 2 -i FDSN:XX_TEST__L_H_Z > reference-detectiononly.mseed3
+./generate_miniseed3.py -s 0 -Y 2004 -D 210 -H 20 -M 28 -S 9 -N 0 -e ../../extra-headers/Example-ExtraHeaders-FDSN-Detection.json -V 2 -i FDSN:XX_TEST__L_H_Z > reference-detectiononly.mseed3
 mseed3-json -d reference-detectiononly.mseed3 > reference-detectiononly.json
 mseed3-text -d reference-detectiononly.mseed3 > reference-detectiononly.txt
 
@@ -58,18 +58,18 @@ mseed3-text -d reference-sinusoid-steim2.mseed3 > reference-sinusoid-steim2.txt
 
 # Steim-2 compressed data, with time quality, correction, and event detections
 echo Building reference-sinusoid-TQ-TC-ED.mseed3
-./generate_miniseed3.py -p steim2 -i FDSN:XX_TEST__L_H_Z -s 1 -N 123000000 -f 00000100 -e ExtraHeader-TQ-TC-ED.json > reference-sinusoid-TQ-TC-ED.mseed3
+./generate_miniseed3.py -p steim2 -i FDSN:XX_TEST__L_H_Z -s 1 -N 123000000 -f 00000100 -e ../../extra-headers/Example-ExtraHeaders-FDSN-TQ-ED.json > reference-sinusoid-TQ-TC-ED.mseed3
 mseed3-json -d reference-sinusoid-TQ-TC-ED.mseed3 > reference-sinusoid-TQ-TC-ED.json
 mseed3-text -d reference-sinusoid-TQ-TC-ED.mseed3 > reference-sinusoid-TQ-TC-ED.txt
 
 # Steim-2 compressed data, with FDSN and non-FDSN extra headers
 echo Building reference-sinusoid-FDSN-Other.mseed3
-./generate_miniseed3.py -p steim2 -i FDSN:XX_TEST__L_H_Z -s 1 -N 123000000 -f 00000100 -e ExtraHeader-FDSN-Other.json > reference-sinusoid-FDSN-Other.mseed3
+./generate_miniseed3.py -p steim2 -i FDSN:XX_TEST__L_H_Z -s 1 -N 123000000 -f 00000100 -e ../../extra-headers/Example-ExtraHeaders-FDSN-Other.json > reference-sinusoid-FDSN-Other.mseed3
 mseed3-json -d reference-sinusoid-FDSN-Other.mseed3 > reference-sinusoid-FDSN-Other.json
 mseed3-text -d reference-sinusoid-FDSN-Other.mseed3 > reference-sinusoid-FDSN-Other.txt
 
 # Steim-2 compressed data, with all FDSN extra headers
 echo Building reference-sinusoid-FDSN-All.mseed3
-./generate_miniseed3.py -p steim2 -i FDSN:XX_TEST__L_H_Z -s 1 -N 123000000 -f 00000100 -e ExtraHeader-FDSN-All.json > reference-sinusoid-FDSN-All.mseed3
+./generate_miniseed3.py -p steim2 -i FDSN:XX_TEST__L_H_Z -s 1 -N 123000000 -f 00000100 -e ../../extra-headers/Example-ExtraHeaders-FDSN-All.json > reference-sinusoid-FDSN-All.mseed3
 mseed3-json -d reference-sinusoid-FDSN-All.mseed3 > reference-sinusoid-FDSN-All.json
 mseed3-text -d reference-sinusoid-FDSN-All.mseed3 > reference-sinusoid-FDSN-All.txt

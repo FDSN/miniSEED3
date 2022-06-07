@@ -10,6 +10,10 @@ Appendix
 A: Extra header examples
 ---------------------------------------
 
+The example extra header structures below include additional white
+space and formatting for readability, which should not be used in an
+actual record.
+
 +++++++++++++++++++++++++++
 FDSN reserved extra headers
 +++++++++++++++++++++++++++
@@ -20,24 +24,22 @@ contains a timing quality value and an event detection is:
 .. literalinclude:: extra-headers/Example-ExtraHeaders-FDSN-TQ-ED.json
   :language: JSON
 
-
 An example of the reserved FDSN headers defined by the FDSN is
-provided below.  In this example, all fields are illustrated in common
-usage.  The example also includes additional white space for
-readability, which should not be used in an actual record.
+provided below.  In this (pathalogical) illustration, all reserved
+fields are represented.
 
-https://iris-edu.github.io/miniSEED3/extra-headers/Example-ExtraHeaders-FDSN.json
-
-(location subject to change)
-
-.. literalinclude:: extra-headers/Example-ExtraHeaders-FDSN.json
+.. literalinclude:: extra-headers/Example-ExtraHeaders-FDSN-All.json
   :language: JSON
-
 
 +++++++++++++++++++++++++++
 Non-FDSN extra headers
 +++++++++++++++++++++++++++
 
+An example of reserved FDSN headers combined with other top-level
+headers, illustrating how custom headers may be added.
+
+.. literalinclude:: extra-headers/Example-ExtraHeaders-FDSN-Other.json
+  :language: JSON
 
 
 
