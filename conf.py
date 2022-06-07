@@ -66,7 +66,7 @@ html_theme_options = {
 
 html_logo='_static/FDSN-logo.png'
 html_favicon = '_static/favicon.ico'
-html_title = 'FDSN Source Identifiers'
+html_title = 'FDSN miniSEED 3'
 html_show_sphinx = False
 html_search_language = 'en'
 
