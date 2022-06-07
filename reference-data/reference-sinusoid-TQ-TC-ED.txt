@@ -1,10 +1,10 @@
 FDSN:XX_TEST__L_H_Z, version 1, 1317 bytes (format: 3)
-             start time: 2012,001,00:00:00.000000
+             start time: 2022,156,20:32:38.123000
       number of samples: 500
        sample rate (Hz): 1
                   flags: [00100000] 8 bits
                          [Bit 2] Clock locked
-                    CRC: 0xDF8AF015
+                    CRC: 0x78098E63
     extra header length: 362 bytes
     data payload length: 896 bytes
        payload encoding: STEIM-2 integer compression (val: 11)
@@ -26,7 +26,7 @@ FDSN:XX_TEST__L_H_Z, version 1, 1317 bytes (format: 3)
                         "BackgroundEstimate": 18,
                         "Wave": "DILATATION",
                         "Units": "COUNTS",
-                        "OnsetTime": "2012-01-13T18:28:06.185000Z",
+                        "OnsetTime": "2022-06-05T20:32:39.120000Z",
                         "MEDSNR": [
                           1,
                           3,

@@ -63,7 +63,7 @@ the same expanding sinusoid signal.
 ===  ================================================================  =====================================================================
 #    Description                                                       Download
 ===  ================================================================  =====================================================================
-1    Text encoded as ASCII                                             :download:`mseed3 <reference-data/reference-ascii.mseed3>` :download:`JSON <reference-data/reference-ascii.json>` :download:`Text <reference-data/reference-ascii.txt>`
+1    Text payload                                                      :download:`mseed3 <reference-data/reference-text.mseed3>` :download:`JSON <reference-data/reference-text.json>` :download:`Text <reference-data/reference-text.txt>`
 2    Event detection headers only, no data payload                     :download:`mseed3 <reference-data/reference-detectiononly.mseed3>` :download:`JSON <reference-data/reference-detectiononly.json>` :download:`Text <reference-data/reference-detectiononly.txt>`
 3    Sinusoid series encoded as 16-bit integers                        :download:`mseed3 <reference-data/reference-sinusoid-int16.mseed3>` :download:`JSON <reference-data/reference-sinusoid-int16.json>` :download:`Text <reference-data/reference-sinusoid-int16.txt>`
 4    Sinusoid series encoded as 32-bit integers                        :download:`mseed3 <reference-data/reference-sinusoid-int32.mseed3>` :download:`JSON <reference-data/reference-sinusoid-int32.json>` :download:`Text <reference-data/reference-sinusoid-int32.txt>`

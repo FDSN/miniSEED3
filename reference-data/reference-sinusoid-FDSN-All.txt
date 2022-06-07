@@ -1,11 +1,11 @@
-FDSN:XX_TEST__L_H_Z, version 1, 3786 bytes (format: 3)
-             start time: 2012,001,00:00:00.000000
+FDSN:XX_TEST__L_H_Z, version 1, 3792 bytes (format: 3)
+             start time: 2022,156,20:32:38.123000
       number of samples: 500
        sample rate (Hz): 1
                   flags: [00100000] 8 bits
                          [Bit 2] Clock locked
-                    CRC: 0x3918E5EC
-    extra header length: 2831 bytes
+                    CRC: 0x51F086F
+    extra header length: 2837 bytes
     data payload length: 896 bytes
        payload encoding: STEIM-2 integer compression (val: 11)
           extra headers:
@@ -17,7 +17,7 @@ FDSN:XX_TEST__L_H_Z, version 1, 3786 bytes (format: 3)
                     "LeapSecond": 1,
                     "Exception": [
                       {
-                        "Time": "2012-01-13T18:46:36Z",
+                        "Time": "2022-05-06T20:32:41.12Z",
                         "VCOCorrection": 50.7812,
                         "ReceptionQuality": 80,
                         "Count": 23,
@@ -25,7 +25,7 @@ FDSN:XX_TEST__L_H_Z, version 1, 3786 bytes (format: 3)
                         "ClockStatus": "SNR=48,51,51,50,50,48,46,48,48,45,45"
                       },
                       {
-                        "Time": "2012-01-13T18:48:12.7654Z",
+                        "Time": "2022-05-06T20:32:42.185Z",
                         "VCOCorrection": 44.1313,
                         "ReceptionQuality": 55,
                         "Count": 19690,
@@ -44,8 +44,8 @@ FDSN:XX_TEST__L_H_Z, version 1, 3786 bytes (format: 3)
                         "SignalAmplitude": 80,
                         "SignalPeriod": 0.4,
                         "BackgroundEstimate": 18,
-                        "OnsetTime": "2012-01-13T18:28:06.185000Z",
-                        "Detector": "Dalek STA\/LTA"
+                        "OnsetTime": "2022-05-06T20:32:39.120000Z",
+                        "Detector": "Dalek STA/LTA"
                       },
                       {
                         "Type": "MURDOCK",
@@ -54,7 +54,7 @@ FDSN:XX_TEST__L_H_Z, version 1, 3786 bytes (format: 3)
                         "BackgroundEstimate": 18,
                         "Wave": "DILATATION",
                         "Units": "COUNTS",
-                        "OnsetTime": "2012-01-13T18:28:06.185000Z",
+                        "OnsetTime": "2022-05-06T20:32:39.185000Z",
                         "MEDSNR": [
                           1,
                           3,
@@ -73,7 +73,7 @@ FDSN:XX_TEST__L_H_Z, version 1, 3786 bytes (format: 3)
                     "Sequence": [
                       {
                         "Type": "Step",
-                        "BeginTime": "2012-01-13T18:28:06.185000Z",
+                        "BeginTime": "2022-05-06T20:32:39.120000Z",
                         "Steps": 12,
                         "StepFirstPulsePositive": true,
                         "StepAlternateSign": true,
@@ -82,8 +82,8 @@ FDSN:XX_TEST__L_H_Z, version 1, 3786 bytes (format: 3)
                         "Amplitude": 1345,
                         "InputUnits": "COUNTS",
                         "Duration": 603.456,
-                        "SinePeriod": 5,
-                        "StepBetween": 500,
+                        "SinePeriod": 5.0,
+                        "StepBetween": 500.0,
                         "InputChannel": "CAL",
                         "ReferenceAmplitude": 45.8,
                         "Coupling": "RESISTIVE",
@@ -91,18 +91,18 @@ FDSN:XX_TEST__L_H_Z, version 1, 3786 bytes (format: 3)
                       },
                       {
                         "Type": "Step",
-                        "EndTime": "2012-01-13T18:28:16.185000Z"
+                        "EndTime": "2022-05-06T20:32:39.120000Z"
                       },
                       {
                         "Type": "Sine",
-                        "BeginTime": "2012-01-13T18:28:06.185000Z",
-                        "EndTime": "2012-01-13T18:28:06.185000Z",
+                        "BeginTime": "2022-05-06T20:32:39.120000Z",
+                        "EndTime": "2022-05-06T20:32:39.120000Z",
                         "Trigger": "MANUAL",
                         "Continued": true,
                         "Amplitude": 1345,
                         "InputUnits": "COUNTS",
                         "AmplitudeRange": "PEAKTOPEAK",
-                        "SinePeriod": 5,
+                        "SinePeriod": 5.0,
                         "InputChannel": "CAL",
                         "ReferenceAmplitude": 45.8,
                         "Coupling": "RESISTIVE",
@@ -110,11 +110,11 @@ FDSN:XX_TEST__L_H_Z, version 1, 3786 bytes (format: 3)
                       },
                       {
                         "Type": "PseudoRandom",
-                        "BeginTime": "2012-01-13T18:28:06.185000Z",
-                        "EndTime": "2012-01-13T18:28:06.185000Z",
+                        "BeginTime": "2022-05-06T20:32:39.120000Z",
+                        "EndTime": "2022-05-06T20:32:39.120000Z",
                         "Trigger": "MANUAL",
                         "Amplitude": 0.0001,
-                        "InputUnits": "M\/S",
+                        "InputUnits": "M/S",
                         "Duration": 300,
                         "InputChannel": "CAL",
                         "ReferenceAmplitude": 45.8,
@@ -124,8 +124,8 @@ FDSN:XX_TEST__L_H_Z, version 1, 3786 bytes (format: 3)
                       },
                       {
                         "Type": "Generic",
-                        "BeginTime": "2012-01-13T18:28:06.185000Z",
-                        "EndTime": "2012-01-13T18:28:06.185000Z",
+                        "BeginTime": "2022-05-06T20:32:39.120000Z",
+                        "EndTime": "2022-05-06T20:32:39.120000Z",
                         "Trigger": "MANUAL",
                         "Amplitude": 1345,
                         "Duration": 100
@@ -136,12 +136,12 @@ FDSN:XX_TEST__L_H_Z, version 1, 3786 bytes (format: 3)
                     "Sequence": [
                       {
                         "Type": "Gimbal",
-                        "BeginTime": "2012-01-13T18:27:06.185000Z",
-                        "EndTime": "2012-01-13T18:27:16.185000Z",
+                        "BeginTime": "2022-05-06T20:32:39.120000Z",
+                        "EndTime": "2022-05-06T20:32:39.120000Z",
                         "Trigger": "AUTOMATIC"
                       },
                       {
-                        "BeginTime": "2012-01-13T18:28:06.185000Z"
+                        "BeginTime": "2022-05-06T20:32:40.120000Z"
                       }
                     ]
                   },

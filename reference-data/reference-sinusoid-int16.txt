@@ -1,10 +1,10 @@
 FDSN:XX_TEST__L_H_Z, version 1, 859 bytes (format: 3)
-             start time: 2012,001,00:00:00.000000
+             start time: 2022,156,20:32:38.123456
       number of samples: 400
        sample rate (Hz): 1
                   flags: [00100000] 8 bits
                          [Bit 2] Clock locked
-                    CRC: 0x4D287D6
+                    CRC: 0xA7806D53
     extra header length: 0 bytes
     data payload length: 800 bytes
        payload encoding: 16-bit integer (val: 1)

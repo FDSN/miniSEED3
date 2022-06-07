@@ -1,16 +1,16 @@
-{
-    "SID": "FDSN:XX_TEST__L_H_Z",
+[{
+    "SID": "FDSN:XX_TEST__M_H_Z",
     "RecordLength": 955,
     "FormatVersion": 3,
     "Flags": {
         "RawUInt8": 4,
         "ClockLocked": true
     },
-    "StartTime": "2012-01-01T00:00:00.000000000Z",
+    "StartTime": "2022-06-05T20:32:38.123456789Z",
     "EncodingFormat": 11,
-    "SampleRate": 1,
+    "SampleRate": 5,
     "SampleCount": 500,
-    "CRC": "0xD01B63CE",
+    "CRC": "0xC282132F",
     "PublicationVersion": 1,
     "ExtraLength": 0,
     "DataLength": 896,
@@ -516,4 +516,4 @@
         -187799,
         -159476
     ]
-}
+}]

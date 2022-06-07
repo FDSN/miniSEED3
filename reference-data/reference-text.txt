@@ -1,9 +1,9 @@
-FDSN:XX_TEST__L_H_Z, version 1, 294 bytes (format: 3)
-             start time: 2012,001,00:00:00.000000
+FDSN:XX_TEST__L_O_G, version 1, 294 bytes (format: 3)
+             start time: 2022,156,20:32:38.123456
       number of samples: 235
-       sample rate (Hz): 1
+       sample rate (Hz): 0
                   flags: [00000000] 8 bits
-                    CRC: 0x7F40FCD3
+                    CRC: 0xC3204B22
     extra header length: 0 bytes
     data payload length: 235 bytes
        payload encoding: Text (val: 0)
