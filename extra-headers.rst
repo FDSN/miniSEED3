@@ -65,3 +65,6 @@ expected to reside in a public repository:
 Multiple JSON Schema documents are easily combined for use in
 validating extra headers that may contain headers defined in multiple
 schema documents.
+
+See :ref:`example-non-fdsn-extra-headers` for an example of non-FDSN extra headers.
+

@@ -31,6 +31,8 @@ fields are represented.
 .. literalinclude:: extra-headers/Example-ExtraHeaders-FDSN-All.json
   :language: JSON
 
+.. _example-non-fdsn-extra-headers:
+
 +++++++++++++++++++++++++++
 Non-FDSN extra headers
 +++++++++++++++++++++++++++
@@ -40,10 +42,6 @@ headers, illustrating how custom headers may be added.
 
 .. literalinclude:: extra-headers/Example-ExtraHeaders-FDSN-Other.json
   :language: JSON
-
-
-
-.. _mapping-miniseed2:
 
 ---------------------------------------
 B: Reference data
