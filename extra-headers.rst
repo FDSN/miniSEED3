@@ -29,7 +29,7 @@ container of the extra headers is reserved for definition by the FDSN.
 The documentation and schema of these headers are specified in JSON
 Schema here:
 
-https://iris-edu.github.io/miniSEED3/extra-headers/ExtraHeaders-FDSN.schema.json
+https://raw.githubusercontent.com/iris-edu/miniSEED3/main/extra-headers/ExtraHeaders-FDSN-v1.0.schema.json
 
 (location subject to change)
 
