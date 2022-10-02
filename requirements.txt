@@ -1,5 +1,4 @@
 sphinx == 4.*
 sphinx-rtd-theme
+json_schema_for_humans
 sphinxmark
-sphinx-jsonschema
-sphinx_toolbox
