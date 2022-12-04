@@ -73,3 +73,6 @@ echo Building reference-sinusoid-FDSN-All.mseed3
 ./generate_miniseed3.py -p steim2 -i FDSN:XX_TEST__L_H_Z -s 1 -N 123000000 -f 00000100 -e ../../extra-headers/Example-ExtraHeaders-FDSN-All.json > reference-sinusoid-FDSN-All.mseed3
 mseed3-json -d reference-sinusoid-FDSN-All.mseed3 > reference-sinusoid-FDSN-All.json
 mseed3-text -d reference-sinusoid-FDSN-All.mseed3 > reference-sinusoid-FDSN-All.txt
+
+echo
+echo "Copy new reference-* files to the parent directory to replace canonical reference files"
