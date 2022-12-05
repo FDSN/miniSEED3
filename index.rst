@@ -27,6 +27,7 @@ such as location, instrument response, etc.
    definition
    data-encodings
    extra-headers
+   fdsn-reserved
    background
    appendix
    software
