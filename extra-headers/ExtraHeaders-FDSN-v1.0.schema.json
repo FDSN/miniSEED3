@@ -35,7 +35,7 @@
                     "additionalProperties": false,
                     "properties": {
                         "Quality": {
-                            "description": "Timing quality.  A vendor specific value from 0 to 100% of maximum accuracy. [same as SEED 2.4 Blockette 1001, field 3]",
+                            "description": "DEPRECATED Timing quality.  A vendor specific value from 0 to 100% of maximum accuracy. [same as SEED 2.4 Blockette 1001, field 3] It is recommended to use MaxEstimatedError instead.",
                             "type": "number"
                         },
                         "Correction": {
