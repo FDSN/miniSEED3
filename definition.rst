@@ -179,8 +179,10 @@ Description of record fields
 .. _field-12:
 
 :12: UINT32: **Length of data payload**.  Length, in bytes, of data
-     payload starting in field 15.  If no data payload, set this value
-     to 0.
+     payload starting in field 15.  If no data payload is present, 
+     set this value to 0. Note that no padding is permitted in the 
+     data record itself, although padding may exist within the 
+     payload depending on the type of encoding used.
 
 .. _field-13:
 
