@@ -164,7 +164,8 @@ Description of record fields
     incremented for each revision.  A value of 0 indicates unknown
     version such as when data are converted to miniSEED from another
     format.  Changes to this value for user-versioning are not
-    recommended, instead an extra header could be used.
+    recommended, instead an extra header should be used to allow for 
+    user-versioning of different derivatives of the data.
 
 .. _field-10:
 
