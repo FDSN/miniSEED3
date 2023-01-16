@@ -10,7 +10,7 @@ of FDSN extra headers.
 
 The FDSN reserved headers are defined and documented in `JSON Schema <http://json-schema.org/>`_.
 
-Download the `FDSN Extra Header schema v1.0 <https://raw.githubusercontent.com/iris-edu/miniSEED3/main/extra-headers/ExtraHeaders-FDSN-v1.0.schema.json>`_.
+Download the `FDSN Extra Header schema v1.0 <https://raw.githubusercontent.com/iris-edu/miniSEED3/main/extra-headers/ExtraHeaders-FDSN-v1.0.schema-2020-12.json>`_.
 
 The documentation and schema of these headers may be browsed here:
 

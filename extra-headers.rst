@@ -24,7 +24,7 @@ Extra headers are specified and documented in `JSON Schema <http://json-schema.o
 FDSN Reserved Headers
 ----------------------------
 
-The **"FDSN"** key at the root of the extra headres are reserved for
+The **"FDSN"** key at the root of the extra headers are reserved for
 definition by the FDSN.
 
 See :ref:`fdsn-reserved-headers` for documentation of these headers.
