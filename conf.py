@@ -15,6 +15,8 @@
 # sys.path.insert(0, os.path.abspath('.'))
 import sphinx_rtd_theme
 
+from json_schema_for_humans.generate import generate_from_filename
+from json_schema_for_humans.generation_configuration import GenerationConfiguration
 
 # -- Project information -----------------------------------------------------
 
@@ -37,8 +39,6 @@ master_doc = 'index'
 extensions = [
   'sphinx_rtd_theme',
   'sphinxmark',
-  'sphinx-jsonschema',
-  'sphinx_toolbox.collapse',
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -80,11 +80,23 @@ html_static_path = ['_static']
 html_css_files = [
   'css/fdsn_rtd_theme.css',
   'css/custom.css',
+  'css/schema_doc.css',
 ]
 
 html_js_files = [
-  'js/sidebar_context.js'
+  'js/sidebar_context.js',
+  'js/schema_doc.min.js',
 ]
+
+# -- Generate JSON schema documentation -------------------------------
+jsfh_config = GenerationConfiguration(copy_css=False,
+                                      copy_js=False,
+                                      expand_buttons=True,
+                                      with_footer=False)
+
+generate_from_filename("extra-headers/ExtraHeaders-FDSN-v1.0.schema-2020-12.json",
+                       "extra-headers/ExtraHeaders-FDSN-v1.0.schema.html",
+                        config=jsfh_config)
 
 # Mark as draft, disable for releases
 sphinxmark_enable = True

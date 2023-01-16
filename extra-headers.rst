@@ -24,25 +24,10 @@ Extra headers are specified and documented in `JSON Schema <http://json-schema.o
 FDSN Reserved Headers
 ----------------------------
 
-The key named **"FDSN"** with value of an JSON object in the root
-container of the extra headers is reserved for definition by the FDSN.
-The documentation and schema of these headers are specified in JSON
-Schema here:
+The **"FDSN"** key at the root of the extra headres are reserved for
+definition by the FDSN.
 
-.. collapse:: FDSN Extra Header schema v1.0
-
-  .. jsonschema:: extra-headers/ExtraHeaders-FDSN-v1.0.schema.json
-    :lift_definitions:
-    :auto_reference:
-    :auto_target:
-
-|
-
-Download `FDSN Extra Header schema v1.0 <https://raw.githubusercontent.com/iris-edu/miniSEED3/main/extra-headers/ExtraHeaders-FDSN-v1.0.schema.json>`_.
-
-When not present, the boolean values in the FDSN reserved headers
-should be considered to be `false` unless otherwise documented.  Such
-values do not need to be included when the value is `false`.
+See :ref:`fdsn-reserved-headers` for documentation of these headers.
 
 See :ref:`example-fdsn-extra-headers` for an example of FDSN extra headers.
 
