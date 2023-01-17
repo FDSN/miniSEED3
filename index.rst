@@ -22,7 +22,9 @@ Versioning
 
 Starting with version 3 of **miniSEED**, the specification version is a single
 integer. Any non-backward compatible change to the structure of the header or
-record results in an increment to this number. There are no minor revisions.
+record results in an increment to this number. The specification version
+corresponds to the Format version identified in records written to conform
+with this version of the specification. There are no minor revisions.
 However, the addition of new data encodings or new reserved headers is
 considered backwards compatible. The FDSN may add encodings and extra headers
 within the FDSN key or make editorial changes to the specification without change to the
