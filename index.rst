@@ -23,7 +23,8 @@ Versioning
 Starting with version 3 of **miniSEED**, the specification version is a single
 integer. Any non-backward compatible change to the structure of the header or
 record results in an increment to this number. The specification version
-corresponds to the Format version identified in records written to conform
+corresponds to :ref:`field 2, Format version<field-2>`, in the
+header of records written to conform
 with this version of the specification. There are no minor revisions.
 However, the addition of new data encodings or new reserved headers is
 considered backwards compatible. The FDSN may add encodings and extra headers
@@ -35,7 +36,9 @@ requirement allows older software to parse future records successfully within
 the same specification major version, even though they may be unable to
 decompress the data payload for new encodings.
 
-.. BUILD: remember to also change in conf
+..
+  when building remember to also change in conf.py
+
 This document is miniSEED 3 as revised 2023-01-17 (DRAFT).
 
 
