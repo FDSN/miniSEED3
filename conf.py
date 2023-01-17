@@ -26,7 +26,11 @@ author = 'FDSN'
 
 # The full version, including alpha/beta/rc tags
 release = '0.0.0'
-version = '0.0.0 DRAFT'
+# for miniSEED, this should be the major version along with the
+# date of an documentation revision, e.g.
+# version = 'ver. 3 rev. 2023-01-17'
+# remember to also update in index.rst
+version = 'ver. 3 rev. 2023-01-17 (DRAFT)'
 
 # -- General configuration ---------------------------------------------------
 

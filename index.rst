@@ -16,6 +16,27 @@ metadata counterpart of miniSEED is `StationXML <http://docs.fdsn.org/projects/s
 which is used to describe characteristics needed to interpret the data
 such as location, instrument response, etc.
 
+----------
+Versioning
+----------
+
+Starting with version 3 of **miniSEED**, the specification version is a single
+integer. Any non-backward compatible change to the structure of the header or
+record results in an increment to this number. There are no minor revisions.
+However, the addition of new data encodings or new reserved headers is
+considered backwards compatible. The FDSN may add encodings and extra headers
+within the FDSN key or make editorial changes to the specification without change to the
+major version, resulting only in a new revision of the specification document.
+Note that all parsing software MUST allow for the potential of unknown, new data
+encodings and new extra headers as these are subject to extension. This
+requirement allows older software to parse future records successfully within
+the same specification major version, even though they may be unable to
+decompress the data payload for new encodings.
+
+.. BUILD: remember to also change in conf
+This document is miniSEED 3 as revised 2023-01-17 (DRAFT).
+
+
 .. note::
    This specification defines version 3 of miniSEED.  See
    :ref:`background` for information on earlier versions.
