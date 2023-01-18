@@ -21,16 +21,20 @@ from json_schema_for_humans.generation_configuration import GenerationConfigurat
 # -- Project information -----------------------------------------------------
 
 project = 'FDSN miniSEED 3'
-copyright = '2021, International FDSN'
+copyright = '2023, International FDSN'
 author = 'FDSN'
 
 # The full version, including alpha/beta/rc tags
-release = '0.0.0'
-# for miniSEED, this should be the major version along with the
-# date of an documentation revision, e.g.
-# version = 'ver. 3 rev. 2023-01-17'
-# remember to also update in index.rst
-version = 'ver. 3 rev. 2023-01-17 (DRAFT)'
+version = '3'
+
+# Documentation version: major + revision date
+doc_version = 'v' + version + ' rev. 2023-01-18 (DRAFT)'
+
+# Allow |doc_version| and |major_version| to be used in RST
+rst_epilog = f"""
+.. |doc_version|   replace:: {doc_version}
+.. |major_version| replace:: {version}
+"""
 
 # -- General configuration ---------------------------------------------------
 

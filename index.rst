@@ -36,14 +36,10 @@ requirement allows older software to parse future records successfully within
 the same specification major version, even though they may be unable to
 decompress the data payload for new encodings.
 
-..
-  when building remember to also change in conf.py
-
-This document is miniSEED 3 as revised 2023-01-17 (DRAFT).
-
+This document is miniSEED |doc_version|.
 
 .. note::
-   This specification defines version 3 of miniSEED.  See
+   This specification defines miniSEED |major_version|.  See
    :ref:`background` for information on earlier versions.
 
 .. toctree::
