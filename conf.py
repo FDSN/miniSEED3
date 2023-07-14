@@ -102,7 +102,7 @@ jsfh_config = GenerationConfiguration(copy_css=False,
                                       expand_buttons=True,
                                       with_footer=False)
 
-generate_from_filename("extra-headers/ExtraHeaders-FDSN-v1.0.schema-2020-12.json",
+generate_from_filename("extra-headers/ExtraHeaders-FDSN-v1.0.schema-2023-07.json",
                        "extra-headers/ExtraHeaders-FDSN-v1.0.schema.html",
                         config=jsfh_config)
 
