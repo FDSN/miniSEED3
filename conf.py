@@ -25,7 +25,7 @@ copyright = '2023, International FDSN'
 author = 'FDSN'
 
 version = '3'
-release = '2023-01-18 (DRAFT)'
+release = '2023-01-18'
 
 # Documentation version: major + release date
 doc_version = 'v' + version + ' rev. ' + release
@@ -107,7 +107,7 @@ generate_from_filename("extra-headers/ExtraHeaders-FDSN-v1.0.schema-2023-07.json
                         config=jsfh_config)
 
 # Mark as draft, disable for releases
-sphinxmark_enable = True
+sphinxmark_enable = False
 
 # Sphinxmark options, 'document' is the div for the RTD theme body
 sphinxmark_div = 'document'
