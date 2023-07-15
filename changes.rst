@@ -6,7 +6,7 @@ Changes
 
 Changes to this specification are listed below.
 
-July 2023
+April 2023
 --------------
 
 * Specification revision 2023-01-18 adopted by FDSN.
