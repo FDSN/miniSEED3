@@ -10,7 +10,7 @@
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #
-# import os
+import os
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
 import sphinx_rtd_theme
@@ -88,23 +88,26 @@ html_static_path = ['_static']
 html_css_files = [
   'css/fdsn_rtd_theme.css',
   'css/custom.css',
-  'css/schema_doc.css',
+#  'css/schema_doc.css',
 ]
 
 html_js_files = [
   'js/sidebar_context.js',
-  'js/schema_doc.min.js',
+#  'js/schema_doc.min.js',
 ]
 
 # -- Generate JSON schema documentation -------------------------------
-jsfh_config = GenerationConfiguration(copy_css=False,
-                                      copy_js=False,
+jsfh_config = GenerationConfiguration(copy_css=True,
+                                      copy_js=True,
                                       expand_buttons=True,
                                       with_footer=False)
 
 generate_from_filename("extra-headers/ExtraHeaders-FDSN-v1.0.schema-2023-07.json",
                        "extra-headers/ExtraHeaders-FDSN-v1.0.schema.html",
                         config=jsfh_config)
+
+os.rename("extra-headers/schema_doc.css", "_static/css/schema_doc.css")
+os.rename("extra-headers/schema_doc.min.js", "_static/js/schema_doc.min.js")
 
 # Mark as draft, disable for releases
 sphinxmark_enable = False
