@@ -10,17 +10,31 @@
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #
+import re
 import os
-# import sys
-# sys.path.insert(0, os.path.abspath('.'))
+import subprocess
 import sphinx_rtd_theme
 
 from json_schema_for_humans.generate import generate_from_filename
 from json_schema_for_humans.generation_configuration import GenerationConfiguration
 
+def get_context():
+    """Return the current RTD version or git branch name"""
+    try:
+        git_context = subprocess.check_output(
+            ["git", "rev-parse", "--abbrev-ref", "HEAD"]
+        ).strip().decode("utf-8")
+
+        # Check for RTD version, default to git_version if not on RTD
+        context = os.getenv("READTHEDOCS_VERSION", git_context)
+
+        return context
+    except Exception:
+        return ""
+
 # -- Project information -----------------------------------------------------
 
-project = 'FDSN miniSEED 3'
+project = 'miniSEED 3'
 copyright = '2023, International FDSN'
 author = 'FDSN'
 
@@ -46,7 +60,6 @@ master_doc = 'index'
 # ones.
 extensions = [
   'sphinx_rtd_theme',
-  'sphinxmark',
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -109,8 +122,8 @@ generate_from_filename("extra-headers/ExtraHeaders-FDSN-v1.0.schema-2023-07.json
 os.rename("extra-headers/schema_doc.css", "_static/css/schema_doc.css")
 os.rename("extra-headers/schema_doc.min.js", "_static/js/schema_doc.min.js")
 
-# Mark as draft, disable for releases
-sphinxmark_enable = False
-
-# Sphinxmark options, 'document' is the div for the RTD theme body
-sphinxmark_div = 'document'
+# Enable sphinxmark for draft documentation
+if get_context() == "draft":
+    extensions.append("sphinxmark")
+    sphinxmark_enable = True
+    sphinxmark_div = "document"

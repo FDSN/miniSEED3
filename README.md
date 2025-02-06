@@ -20,9 +20,18 @@ https://docs.fdsn.org/projects/miniSEED3
 
 ## Documentation source organization
 
-* The `draft` branch contains the latest draft documentation
-* Specification releases are branches from `main`, following a release:
-** the version (in conf.py) is updated appropriately on the branch, never in main
+* The `draft` branch contains the latest draft documentation. All changes are first applied to
+  this branch for review and merged with main for releases.
+* Specification releases are tags in the form `v.#.#-d#`.
+
+## Versioning
+
+The versioning scheme used in tags uses the following form: `vMAJOR.MINOR-dDOC` where:
+* `MAJOR.MINOR` are the version of the specification, and
+* `DOC` is the version of the documentation.
+
+The `DOC` version changes when the documentation has been updated with clarifications, typos,
+etc. and does not imply any functional change to the specification.
 
 ## Change procedure
 
