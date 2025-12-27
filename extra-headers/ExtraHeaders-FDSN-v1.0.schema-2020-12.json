@@ -36,7 +36,7 @@
                     "properties": {
                         "Quality": {
                             "description": "DEPRECATED Timing quality.  A vendor specific value from 0 to 100% of maximum accuracy. [same as SEED 2.4 Blockette 1001, field 3] It is recommended to use MaxEstimatedError instead.",
-                            "type": "number"
+                            "type": "integer"
                         },
                         "Correction": {
                             "description": "Time correction applied to record start time in seconds. [same as SEED 2.4 FSDH, field 16]",
