@@ -68,7 +68,7 @@ templates_path = ['_templates']
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path.
-exclude_patterns = ['docs', 'Thumbs.db', '.DS_Store']
+exclude_patterns = ['docs', 'Thumbs.db', '.DS_Store', 'venv', '_build']
 
 
 # -- Options for HTML output -------------------------------------------------
@@ -115,7 +115,7 @@ jsfh_config = GenerationConfiguration(copy_css=True,
                                       expand_buttons=True,
                                       with_footer=False)
 
-generate_from_filename("extra-headers/ExtraHeaders-FDSN-v1.0.schema-2023-07.json",
+generate_from_filename("extra-headers/ExtraHeaders-FDSN-v1.0.schema-2020-12.json",
                        "extra-headers/ExtraHeaders-FDSN-v1.0.schema.html",
                         config=jsfh_config)
 
