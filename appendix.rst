@@ -43,6 +43,8 @@ headers, illustrating how custom headers may be added.
 .. literalinclude:: extra-headers/Example-ExtraHeaders-FDSN-Other.json
   :language: JSON
 
+.. _reference-data-examples:
+
 ---------------------------------------
 B: Reference data
 ---------------------------------------
@@ -129,8 +131,8 @@ the same expanding sinusoid signal.
        | :download:`JSON <reference-data/reference-headeronly.json>`
        | :download:`Text <reference-data/reference-headeronly.txt>`
    * - 13
-     - | Sinusoid series with large field Source ID incompatible with SEED
-       | **FDSN:NETWORK_STATION_LOCATION_G_SR_D** (not real, for illustration)
+     - | Sinusoid series with large field Source ID incompatible with SEED:
+       | **"FDSN:NETWORK_STATION_LOCATION_G_SR_D"** (not real, for illustration)
      - | :download:`mseed3 <reference-data/reference-sinusoid-steim1-large-source-id.mseed3>`
        | :download:`JSON <reference-data/reference-sinusoid-steim1-large-source-id.json>`
        | :download:`Text <reference-data/reference-sinusoid-steim1-large-source-id.txt>`
