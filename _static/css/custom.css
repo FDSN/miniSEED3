@@ -1,3 +1,8 @@
 .strike {
   text-decoration: line-through;
 }
+
+/* Remove the extra gap at the bottom of line-blocks inside tables */
+td .line-block {
+  margin-bottom: 0 !important;
+}
