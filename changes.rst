@@ -13,7 +13,7 @@ Version 3.0-d2 (April 2026)
 
   * Header-only record with FDSN and non-FDSN headers
   * | Record with large field Source ID incompatible with SEED:
-    | **"FDSN:NETWORK_STATION_LOCATION_G_SR_D"** (not real, for illustration only)
+    | **"FDSN:NETWORK_STATION_LOCATION_G_XX_"** (not real, for illustration only)
 
 Version 3.0-d1 (February 2026)
 -------------------------------

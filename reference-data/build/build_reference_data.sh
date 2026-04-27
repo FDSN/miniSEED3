@@ -76,13 +76,13 @@ mseed3-text -d reference-sinusoid-FDSN-All.mseed3 > reference-sinusoid-FDSN-All.
 
 # Header only record, with timing exceptions and non-FDSN extra headers
 echo Building reference-headeronly.mseed3
-./generate_miniseed3.py -i FDSN:XX_TEST__S_O_H -s 1 -N 123000000 -e ../../extra-headers/Example-ExtraHeaders-SOH.json > reference-headeronly.mseed3
+./generate_miniseed3.py -i FDSN:XX_TEST__L_H_Z -s 1 -N 123000000 -e ../../extra-headers/Example-ExtraHeaders-SOH.json > reference-headeronly.mseed3
 mseed3-json -d reference-headeronly.mseed3 > reference-headeronly.json
 mseed3-text -d reference-headeronly.mseed3 > reference-headeronly.txt
 
 # Steim-1 compressed data with large field Source ID
 echo Building reference-sinusoid-steim1-large-source-id.mseed3
-./generate_miniseed3.py -p steim1 -i FDSN:NETWORK_STATION_LOCATION_G_SR_D -s 1 -N 123000000 > reference-sinusoid-steim1-large-source-id.mseed3
+./generate_miniseed3.py -p steim1 -i FDSN:NETWORK_STATION_LOCATION_G_XX_ -s 1000 -N 123000000 > reference-sinusoid-steim1-large-source-id.mseed3
 mseed3-json -d reference-sinusoid-steim1-large-source-id.mseed3 > reference-sinusoid-steim1-large-source-id.json
 mseed3-text -d reference-sinusoid-steim1-large-source-id.mseed3 > reference-sinusoid-steim1-large-source-id.txt
 

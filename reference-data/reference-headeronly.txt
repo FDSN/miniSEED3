@@ -1,9 +1,9 @@
-FDSN:XX_TEST__S_O_H, version 1, 789 bytes (format: 3)
+FDSN:XX_TEST__L_H_Z, version 1, 789 bytes (format: 3)
              start time: 2022-06-05T20:32:38.123000Z (156)
       number of samples: 0
        sample rate (Hz): 1
                   flags: [00000000] 8 bits
-                    CRC: 0x9DED7EA9
+                    CRC: 0xEE1C2315
     extra header length: 730 bytes
     data payload length: 0 bytes
        payload encoding: Text (val: 0)

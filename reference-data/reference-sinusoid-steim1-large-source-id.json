@@ -1,15 +1,15 @@
 [{
-    "SID": "FDSN:NETWORK_STATION_LOCATION_G_SR_D",
-    "RecordLength": 1612,
+    "SID": "FDSN:NETWORK_STATION_LOCATION_G_XX_",
+    "RecordLength": 1611,
     "FormatVersion": 3,
     "Flags": {
         "RawUInt8": 0
     },
     "StartTime": "2022-06-05T20:32:38.123000000Z",
     "EncodingFormat": 10,
-    "SampleRate": 1.0,
+    "SampleRate": 1000.0,
     "SampleCount": 500,
-    "CRC": "0x45D10D3E",
+    "CRC": "0x4A011EBB",
     "PublicationVersion": 1,
     "ExtraLength": 0,
     "DataLength": 1536,

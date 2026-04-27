@@ -1,5 +1,5 @@
 [{
-    "SID": "FDSN:XX_TEST__S_O_H",
+    "SID": "FDSN:XX_TEST__L_H_Z",
     "RecordLength": 789,
     "FormatVersion": 3,
     "Flags": {
@@ -9,7 +9,7 @@
     "EncodingFormat": 0,
     "SampleRate": 1.0,
     "SampleCount": 0,
-    "CRC": "0x9DED7EA9",
+    "CRC": "0xEE1C2315",
     "PublicationVersion": 1,
     "ExtraLength": 730,
     "DataLength": 0,
